@@ -1,7 +1,7 @@
 class Hero:
-    def __init__(self, name, inventory=None):
+    def __init__(self, name, inventory=[]):
         self.name = name
-        self.inventory = inventory if inventory is not None else []
+        self.inventory = inventory
 
     def pick_up_item(self, item):
         print(f"{self.name} picked up: {item}")
